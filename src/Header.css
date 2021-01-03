@@ -18,7 +18,7 @@
 }
 
 .header__icon--active {
-  display: inline;
+  display: inline-flex;
 }
 
 .header__icon > p {
