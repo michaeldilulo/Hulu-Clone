@@ -1,0 +1,16 @@
+.nav {
+  display: flex;
+  color: white;
+  overflow-x: scroll;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
