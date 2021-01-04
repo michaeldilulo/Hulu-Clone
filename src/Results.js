@@ -6,6 +6,8 @@ function Results() {
     return (
         <div className="results">
             <VideoCard />
+            <VideoCard />
+            <VideoCard />
         </div>
     )
 }
