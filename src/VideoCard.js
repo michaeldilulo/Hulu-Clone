@@ -1,6 +1,7 @@
 import React from 'react'
 import "./VideoCard.css"
 import TextTruncate from "react-text-truncate"
+import {ThumbUpSharp} from "@material-ui/icons"
 
 const base_url = "https://image.tmdb.org/t/p/original/"
 
@@ -14,8 +15,11 @@ function VideoCard({movie}) {
                 truncateText="..."
                 text={movie.overview}
             />
-            <h2>Movie Title</h2>
-            <p>Number of Likes...</p>
+            <h2>{movie.title || movie.original_name}</h2>
+            <p>
+                {movie.media_type && `${movie.media_type}`}
+                <ThumbUpSharp />
+                {movie.vote_count}</p>
         </div>
     )
 }
