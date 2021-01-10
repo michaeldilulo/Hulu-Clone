@@ -1,10 +1,12 @@
 import React from 'react'
 import "./VideoCard.css"
 
-function VideoCard() {
+const base_url = "https://image.tmdb.org/t/p/original/"
+
+function VideoCard({movie}) {
     return (
         <div className="videoCard">
-            <img src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/hero/Movies/1996/B0032KLAKE_PrimalFear_UXPA1._V391273729_SX1080_.jpg" alt="" />
+            <img src={`${base_url}${movie.backdrop_path || movie.poster_path}`} alt="" />
             <p>This is a film about coding...</p>
             <h2>Movie Title</h2>
             <p>Number of Likes...</p>
