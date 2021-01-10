@@ -10,6 +10,9 @@ function Results() {
 
     useEffect(() => {
         async function fetchData() {
+            const request = await axios.get(requests.fetchActionMovies)
+            setMovies(request.data.results);
+            return request;
         }
 
         fetchData();
