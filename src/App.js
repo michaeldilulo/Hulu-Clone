@@ -12,9 +12,9 @@ const [selectedOption, setSelectedOption] = useState(requests.fetchTrending)
     <div className="app">
       <Header />
       
-      <Nav />
+      <Nav setSelectedOption={setSelectedOption} />
 
-      <Results />      
+      <Results selectedOption={selectedOption} />      
     </div>
   );
 }
