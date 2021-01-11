@@ -7,8 +7,8 @@ function Nav({setSelectedOption}) {
         <div className="nav">
             <h2 onClick={() => setSelectedOption(requests.fetchTrending)}>Tending</h2>
             <h2 onClick={() => setSelectedOption(requests.fetchTopRated)}>Top Rated</h2>
-            <h2>Action</h2>
-            <h2>Comedy</h2>
+            <h2 onClick={() => setSelectedOption(requests.fetchActionMovies)}>Action</h2>
+            <h2 onClick={() => setSelectedOption(requests.fetchComedyMovies)}>Comedy</h2>
             <h2>Horror</h2>
             <h2>Romance</h2>
             <h2>Mystery</h2>
